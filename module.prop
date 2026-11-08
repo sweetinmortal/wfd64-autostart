@@ -1,0 +1,6 @@
+id=wfd64_autostart
+name=WFD 64-bit Autostart (Anyview Cast)
+version=1.0
+versionCode=1
+author=opencode
+description=LineageOS no incluye /system_ext/bin/wfdservice (32-bit), por lo que Anyview Cast no arranca el servicio nativo. Este modulo arranca wfdservice64 al boot y lo mantiene vivo. Vive en /data/adb/modules, por lo que sobrevive a las actualizaciones OTA.
