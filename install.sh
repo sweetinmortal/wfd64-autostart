@@ -5,6 +5,11 @@
 #   bash install.sh <serial>   # dispositivo específico
 set -euo pipefail
 
+# Git Bash / MSYS converts POSIX paths like /data/... into Windows paths.
+# Disable that so adb receives the real device paths.
+export MSYS_NO_PATHCONV=1
+export MSYS2_ARG_CONV_EXCL='*'
+
 ADB="${ADB:-adb}"
 SERIAL="${1:-}"
 
